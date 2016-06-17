@@ -1,97 +1,96 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Movie Theater</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-  <script src="js/jquery-1.12.4.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Theater</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
   <body>
     <div class="container">
       <h1>Pizza Order Form</h1>
       <div class="row">
         <div class="col-md-6">
           <h2>Create Your Pizza!</h2>
-          <form id="order-form">
-            <div class="row">
-              <div class="col-xs-6" id="question-two">
-                <form id="pizza-size">
-                  <span>Large - 18"</span>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="operator1" value="large">
-                    </label>
-                  </div>
-                  <span>Medium - 14"</span>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="operator1" value="medium">
-                    </label>
-                  </div>
-                  <span>Small/Personal - 10"</span>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="operator1" value="small">
-                    </label>
-                  </div>
-                </form>
-              </div>
-              <div class="col-xs-6" id="question-two">
-                <form id="pizza-crust">
-                  <span>Thin Crust</span>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="operator1" value="large">
-                    </label>
-                  </div>
-                  <span>Pan Crust</span>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="operator1" value="medium">
-                    </label>
-                  </div>
-                  <span>Chewy Original Crust</span>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="operator1" value="small">
-                    </label>
-                  </div>
-                </form>
-              </div>
+          <div class="row">
+            <div class="col-xs-6" id="question-two">
+              <form id="pizza-size">
+                <span>Large - 18"</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value=" Large">
+                  </label>
+                </div>
+                <span>Medium - 14"</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value=" Medium">
+                  </label>
+                </div>
+                <span>Small/Personal - 10"</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value=" Small">
+                  </label>
+                </div>
+              </form>
             </div>
-            <div class="row">
-              <div class="col-4-md">
-                <h3>Meat Toppings</h3>
-                <form action="demo_form.asp" method="get">
-                  <input type="checkbox" name="vehicle" value="Veggie Italian Sausage"> I have a bike<br>
-                  <input type="checkbox" name="vehicle" value="Pepperoni" checked="checked"> I have a car<br>
-                  <input type="checkbox" name="vehicle" value="Pork Sausage"> I have a bike<br>
-                  <input type="checkbox" name="vehicle" value="Canadian Bacon" checked="checked"> I have a car<br>
-                </form>
-              </div>
-              <div class="col-4-md">
-                <h3>Veggies And More</h3>
-                <form action="demo_form.asp" method="get">
-                  <input type="checkbox" name="vehicle" value="Mushrooms"> I have a bike<br>
-                  <input type="checkbox" name="vehicle" value="Tomatoes" checked="checked"> I have a car<br>
-                  <input type="checkbox" name="vehicle" value="Olives"> I have a bike<br>
-                  <input type="checkbox" name="vehicle" value="Bell Peppers" checked="checked"> I have a car<br>
-                </form>
-              </div>
-              <div class="col-4-md">
-                <form action="demo_form.asp" method="get">
-                  <input type="checkbox" name="vehicle" value="Pineapple"> I have a bike<br>
-                  <input type="checkbox" name="vehicle" value="Onions" checked="checked"> I have a car<br>
-                  <input type="checkbox" name="vehicle" value="Basil"> I have a bike<br>
-                  <input type="checkbox" name="vehicle" value="Roasted Garlic" checked="checked"> I have a car<br>
-                </form>
-              </div>
-
+            <div class="col-xs-6" id="question-one">
+              <form id="pizza-crust">
+                <span>Thin Crust</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="crust" value=" Thin Crust">
+                  </label>
+                </div>
+                <span>Pan Crust</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="crust" value=" Pan Crust">
+                  </label>
+                </div>
+                <span>Chewy Original Crust</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="crust" value=" Chewy Original Crust">
+                  </label>
+                </div>
+              </form>
             </div>
-            <button type="submit" class="btn">Order Now!</button>
-          </form>
+          </div>
+          <div class="row">
+            <div class="col-4-md">
+              <h3>Meat Toppings</h3>
+              <form method="get">
+                <input type="checkbox" name="topping" value="Veggie Italian Sausage "> Veggie Italian Sausage<br>
+                <input type="checkbox" name="topping" value="Pepperoni "> Pepperoni<br>
+                <input type="checkbox" name="topping" value="Pork Sausage "> Pork Sausage<br>
+                <input type="checkbox" name="topping" value="Canadian Bacon "> Canadian Bacon<br>
+              </form>
+            </div>
+            <div class="col-4-md">
+              <h3>Veggies And More</h3>
+              <form method="get">
+                <input type="checkbox" name="topping" value="Mushrooms "> Mushrooms<br>
+                <input type="checkbox" name="topping" value="Tomatoes "> Tomatoes<br>
+                <input type="checkbox" name="topping" value="Olives "> Olives<br>
+                <input type="checkbox" name="topping" value="Bell Peppers "> Bell Peppers<br>
+              </form>
+            </div>
+            <div class="col-4-md">
+              <form method="get">
+                <input type="checkbox" name="topping" value="Pineapple"> Pineapple<br>
+                <input type="checkbox" name="topping" value="Onions "> Onions<br>
+                <input type="checkbox" name="topping" value="Basil "> Basil<br>
+                <input type="checkbox" name="topping" value="Roasted Garlic "> Roasted Garlic<br>
+                <button id="order" type="button" class="btn">Order Now!</button>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="col-md-6">
           <div id="show-order">
