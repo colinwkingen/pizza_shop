@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Movie Theater</title>
+    <title>Temple of the Pie</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
@@ -12,12 +12,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pizza Order Form</h1>
+      <h2 class="page-header">Create Your Masterpiece!</h2>
       <div class="row">
-        <div class="col-md-6">
-          <h2>Create Your Pizza!</h2>
+        <div class="col-md-6"><hr>
           <div class="row">
-            <div class="col-xs-6" id="question-two">
+            <div class="col-xs-6 well">
               <form id="pizza-size">
                 <span>Large - 18"</span>
                 <div class="radio">
@@ -39,7 +38,7 @@
                 </div>
               </form>
             </div>
-            <div class="col-xs-6" id="question-one">
+            <div class="col-xs-6 well">
               <form id="pizza-crust">
                 <span>Thin Crust</span>
                 <div class="radio">
@@ -63,7 +62,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-4-md">
+            <div class="col-2-md toppings meat pull-left">
               <h3>Meat Toppings</h3>
               <form method="get">
                 <input type="checkbox" name="topping" value="Veggie Italian Sausage "> Veggie Italian Sausage<br>
@@ -72,17 +71,13 @@
                 <input type="checkbox" name="topping" value="Canadian Bacon "> Canadian Bacon<br>
               </form>
             </div>
-            <div class="col-4-md">
+            <div class="col-2-md toppings veggie pull-right">
               <h3>Veggies And More</h3>
               <form method="get">
                 <input type="checkbox" name="topping" value="Mushrooms "> Mushrooms<br>
                 <input type="checkbox" name="topping" value="Tomatoes "> Tomatoes<br>
                 <input type="checkbox" name="topping" value="Olives "> Olives<br>
                 <input type="checkbox" name="topping" value="Bell Peppers "> Bell Peppers<br>
-              </form>
-            </div>
-            <div class="col-4-md">
-              <form method="get">
                 <input type="checkbox" name="topping" value="Pineapple"> Pineapple<br>
                 <input type="checkbox" name="topping" value="Onions "> Onions<br>
                 <input type="checkbox" name="topping" value="Basil "> Basil<br>
@@ -98,6 +93,7 @@
             </ul>
           </div>
         </div>
+
       </div>
     </div>
   </body>

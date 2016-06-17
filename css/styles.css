@@ -1,0 +1,30 @@
+body {
+  background-color: #C00909;
+  color: #F6F6FF;
+}
+.toppings {
+  background-color: #B00202;
+  color: white;
+  font-size: 1.4em;
+  margin 1em;
+  padding 1em;
+}
+.toppings .btn {
+  color: white;
+  background-color: black;
+  padding: 1em;
+  margin: 1em;
+}
+.well {
+  background-color: #A70202;
+  border-style: solid;
+  border-color: #A10101;
+  border-width: 2px;
+}
+.meat {
+  width: 50%;
+}
+.veggie {
+  width: 50%;
+  margin-top: 0em;
+}

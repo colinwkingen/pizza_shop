@@ -1,14 +1,9 @@
-var pizzaCounter = 1;
-
-
 function PizzaPie() {
   this.pizzaToppings = [];
   this.pizzaCrust = "";
   this.pizzaSize = "";
   this.totalPrice = 0
 };
-
-
 PizzaPie.prototype.calculateCost = function() {
   basePrice = 9;
   toppingBase = 1;
@@ -33,7 +28,6 @@ PizzaPie.prototype.calculateCost = function() {
   return Math.floor(basePrice);
 };
 
-
 $(document).ready(function() {
   $("button").click(function() {
     var crust = $("input:radio[name=crust]:checked").val();
@@ -42,17 +36,15 @@ $(document).ready(function() {
     $("input:checkbox[name=topping]:checked").each(function() {
     toppings.push($(this).val());
     });
-
     newPizza = new PizzaPie();
     newPizza.pizzaToppings = toppings;
     newPizza.pizzaSize = size;
     newPizza.pizzaCrust = crust;
     newPizza.totalPrice = newPizza.calculateCost()
-
-    $("#show-order").append(newPizza.pizzaCrust);
-    $("#show-order").append(newPizza.pizzaSize);
-    $("#show-order").append(newPizza.pizzaToppings);
-    $("#show-order").append(newPizza.totalPrice);
-
+    $("#pizza-list").append("<li><h3> Here's Your Next Pizza! </h3></li>");
+    $("#pizza-list").append("<li> Delicious " + newPizza.pizzaCrust + ", </li>");
+    $("#pizza-list").append("<li> " + newPizza.pizzaSize + " size, </li>");
+    $("#pizza-list").append("<li> And a Generous helping of " + newPizza.pizzaToppings.toString() + " on top.</li>");
+    $("#pizza-list").append("<li> Yours, for the low price of $" + newPizza.totalPrice.toString() + ".99. What a Deal!");
  });
 });
