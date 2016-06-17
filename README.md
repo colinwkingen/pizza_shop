@@ -32,31 +32,16 @@ toppings and calculate the price of this pizza using a prototype.
   - Example Input: Size, Toppings, Crust.
   - Example Output: $15.99
 
-+ The program can show the user information about their order when requested.
++ The program can show the user information about their order.
   - Example Input: Show Order
   - Example Output: 14", Olives, Mushrooms, $15.99.
 
-+ In the output, the program replaces any numbers divisible by 3 with the word "Ping".
-  - Example Input: 4
-  - Example Output: 4, Ping, 2, 1
++ In the output, the program appends new pizza's to the page.
+  - Example Input: ..pizza attributes...
+  - Example Output: Appears below previous pizza.
 
-+ In the output, the program replaces any numbers divisible by 5 with the word "Pong".
-  - Example Input: 6
-  - Example Output: 6, Pong, 4...
-
-+ In the output, the program replaces any numbers divisible by 15 with the word "PingPong".
-  - Example Input: 16
-  - Example Output: 16, PingPong, 14...
-
-+ The program has input buttons that increase and return the font size on click.
-  - Example Input: little 1
-  - Example Output: big 1
-
-+ The program has an "Insanity mode" button which toggles a class that adds really
-  horrible styling to many elements, and a button to remove this class.
-  - Example Input: click event
-  - Example Output: all headers are huge and purple
-
++ The program uses an object for every created pizza, nnd all pizza attributes
+  are stored in the object for output.
 
 
 ##### Licence
