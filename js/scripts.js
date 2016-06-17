@@ -8,10 +8,8 @@ PizzaPie.prototype.calculateCost = function() {
   basePrice = 9;
   toppingBase = 1;
   size = this.pizzaSize;
-  alert(size);
   if (this.pizzaCrust === " Pan Crust" ) {
     basePrice += 2;
-    alert("Ding!")
   } else if (this.pizzaCrust === " Thin Crust") {
     basePrice += 1;
   }
@@ -27,7 +25,6 @@ PizzaPie.prototype.calculateCost = function() {
   }
   return Math.floor(basePrice);
 };
-
 $(document).ready(function() {
   $("button").click(function() {
     var crust = $("input:radio[name=crust]:checked").val();
@@ -41,6 +38,7 @@ $(document).ready(function() {
     newPizza.pizzaSize = size;
     newPizza.pizzaCrust = crust;
     newPizza.totalPrice = newPizza.calculateCost()
+    
     $("#pizza-list").append("<li><h3> Here's Your Next Pizza! </h3></li>");
     $("#pizza-list").append("<li> Delicious " + newPizza.pizzaCrust + ", </li>");
     $("#pizza-list").append("<li> " + newPizza.pizzaSize + " size, </li>");

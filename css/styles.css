@@ -11,9 +11,10 @@ body {
 }
 .toppings .btn {
   color: white;
-  background-color: black;
+  background-color: #051705;
   padding: 1em;
   margin: 1em;
+  font-weight: bold;
 }
 .well {
   background-color: #A70202;
